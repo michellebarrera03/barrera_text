@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Once Upon a Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cinzel:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="rose-divider">❧</div>
+      <h1 class="site-title">Once Upon a Page</h1>
+      <p class="site-tagline">~ A tale as old as time, told one entry at a time ~</p>
+      <div class="rose-divider">❧</div>
+    </div>
+  </header>
+
+  <!-- ========== NAV ========== -->
+  <nav class="site-nav">
+    <a href="#">Home</a>
+    <span class="nav-sep">✦</span>
+    <a href="#">About</a>
+    <span class="nav-sep">✦</span>
+    <a href="#">Archive</a>
+    <span class="nav-sep">✦</span>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="blog-feed">
+
+    <!-- BLOG POST CARD 1 -->
+    <article class="blog-card" id="post-1">
+      <div class="torn-paper">
+        <div class="card-header">
+          <span class="post-date">June 12, 1842</span>
+          <h2 class="post-title">A Morning in the Enchanted Garden</h2>
+          <p class="post-meta">Written by <em>Your Name Here</em></p>
+        </div>
+        <div class="post-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. The roses bloomed this morning in shades of amber and crimson, their petals catching the early light like drops of honey poured from above...
+          </p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. The garden whispered secrets only the wind could carry, and I sat upon the stone bench with my quill and thought of stories yet unwritten...
+          </p>
+        </div>
+        <div class="post-footer">
+          <a href="#" class="read-more">Read More →</a>
+
+          <!-- VOTE SECTION -->
+          <div class="vote-section">
+            <button class="vote-btn upvote" onclick="vote(1, 'up')">▲ <span class="vote-count" id="up-1">24</span></button>
+            <button class="vote-btn downvote" onclick="vote(1, 'down')">▼ <span class="vote-count" id="down-1">3</span></button>
+          </div>
+        </div>
+
+        <!-- COMMENT SECTION -->
+        <div class="comment-section">
+          <h3 class="comment-heading">~ Quill & Ink ~</h3>
+
+          <div class="comments-list" id="comments-1">
+            <div class="comment">
+              <span class="comment-author">Lady Rosalind</span>
+              <p class="comment-text">What a beautiful beginning! I felt as though I were right there in the garden with you.</p>
+            </div>
+            <div class="comment">
+              <span class="comment-author">Sir Edmund</span>
+              <p class="comment-text">The imagery of honey-coloured roses is simply divine. Write more!</p>
+            </div>
+          </div>
+
+          <div class="comment-form">
+            <input type="text" class="comment-name" placeholder="Your name..." />
+            <textarea class="comment-input" placeholder="Leave your thoughts here..."></textarea>
+            <button class="comment-submit" onclick="addComment(1)">✦ Post Comment</button>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- BLOG POST CARD 2 -->
+    <article class="blog-card" id="post-2">
+      <div class="torn-paper">
+        <div class="card-header">
+          <span class="post-date">May 28, 1842</span>
+          <h2 class="post-title">The Library That Holds the World</h2>
+          <p class="post-meta">Written by <em>Your Name Here</em></p>
+        </div>
+        <div class="post-body">
+          <p>
+            There is something sacred about a room filled with books. The smell of old leather and dried ink, the way the afternoon light falls in golden columns across the shelves — it is enough to make one believe in magic...
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Each spine a doorway, each page a key. I have lived a thousand lives without ever leaving this room...
+          </p>
+        </div>
+        <div class="post-footer">
+          <a href="#" class="read-more">Read More →</a>
+
+          <div class="vote-section">
+            <button class="vote-btn upvote" onclick="vote(2, 'up')">▲ <span class="vote-count" id="up-2">41</span></button>
+            <button class="vote-btn downvote" onclick="vote(2, 'down')">▼ <span class="vote-count" id="down-2">1</span></button>
+          </div>
+        </div>
+
+        <div class="comment-section">
+          <h3 class="comment-heading">~ Quill & Ink ~</h3>
+
+          <div class="comments-list" id="comments-2">
+            <div class="comment">
+              <span class="comment-author">Marguerite V.</span>
+              <p class="comment-text">This speaks to my very soul. A library truly is the most enchanted place.</p>
+            </div>
+          </div>
+
+          <div class="comment-form">
+            <input type="text" class="comment-name" placeholder="Your name..." />
+            <textarea class="comment-input" placeholder="Leave your thoughts here..."></textarea>
+            <button class="comment-submit" onclick="addComment(2)">✦ Post Comment</button>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- BLOG POST CARD 3 -->
+    <article class="blog-card" id="post-3">
+      <div class="torn-paper">
+        <div class="card-header">
+          <span class="post-date">May 3, 1842</span>
+          <h2 class="post-title">Candlelight & Quiet Evenings</h2>
+          <p class="post-meta">Written by <em>Your Name Here</em></p>
+        </div>
+        <div class="post-body">
+          <p>
+            When the world grows still and the candles are lit, I find my truest thoughts rising to the surface like cream. The hearth crackles softly and the clock on the mantle ticks in a rhythm that feels older than memory...
+          </p>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. These are the hours I live for — the quiet ones, golden and unhurried, smelling of beeswax and old wood...
+          </p>
+        </div>
+        <div class="post-footer">
+          <a href="#" class="read-more">Read More →</a>
+
+          <div class="vote-section">
+            <button class="vote-btn upvote" onclick="vote(3, 'up')">▲ <span class="vote-count" id="up-3">18</span></button>
+            <button class="vote-btn downvote" onclick="vote(3, 'down')">▼ <span class="vote-count" id="down-3">0</span></button>
+          </div>
+        </div>
+
+        <div class="comment-section">
+          <h3 class="comment-heading">~ Quill & Ink ~</h3>
+
+          <div class="comments-list" id="comments-3">
+          </div>
+
+          <div class="comment-form">
+            <input type="text" class="comment-name" placeholder="Your name..." />
+            <textarea class="comment-input" placeholder="Leave your thoughts here..."></textarea>
+            <button class="comment-submit" onclick="addComment(3)">✦ Post Comment</button>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="rose-divider">❧</div>
+    <p>© Once Upon a Page · Written with candlelight & wonder</p>
+    <div class="rose-divider">❧</div>
+  </footer>
+
+  <script>
+    // ---- VOTE LOGIC ----
+    const voted = {};
+
+    function vote(postId, direction) {
+      const key = `post-${postId}`;
+      const upEl = document.getElementById(`up-${postId}`);
+      const downEl = document.getElementById(`down-${postId}`);
+
+      if (voted[key] === direction) return; // already voted this way
+
+      if (direction === 'up') {
+        upEl.textContent = parseInt(upEl.textContent) + 1;
+        if (voted[key] === 'down') downEl.textContent = Math.max(0, parseInt(downEl.textContent) - 1);
+      } else {
+        downEl.textContent = parseInt(downEl.textContent) + 1;
+        if (voted[key] === 'up') upEl.textContent = Math.max(0, parseInt(upEl.textContent) - 1);
+      }
+
+      voted[key] = direction;
+    }
+
+    // ---- COMMENT LOGIC ----
+    function addComment(postId) {
+      const card = document.getElementById(`post-${postId}`);
+      const nameInput = card.querySelector('.comment-name');
+      const textInput = card.querySelector('.comment-input');
+      const commentsList = document.getElementById(`comments-${postId}`);
+
+      const name = nameInput.value.trim();
+      const text = textInput.value.trim();
+
+      if (!name || !text) {
+        alert('Please enter both your name and a comment.');
+        return;
+      }
+
+      const comment = document.createElement('div');
+      comment.classList.add('comment');
+      comment.innerHTML = `<span class="comment-author">${name}</span><p class="comment-text">${text}</p>`;
+      commentsList.appendChild(comment);
+
+      nameInput.value = '';
+      textInput.value = '';
+    }
+  </script>
+
+</body>
+</html>

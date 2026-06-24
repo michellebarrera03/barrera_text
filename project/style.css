@@ -1,5 +1,5 @@
 /* =============================================
-   ONCE UPON A PAGE — Beauty & the Beast Blog
+   ONCE UPON A BLOG — Beauty & the Beast Blog
    ============================================= */
 
 *, *::before, *::after {
@@ -25,11 +25,9 @@
 }
 
 body {
-  background-color: #1a0d03;
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cg fill='none' stroke='%23c9a020' stroke-width='0.7' opacity='0.13'%3E%3Cpath d='M100 10 C60 40 20 60 10 100 C20 140 60 160 100 190 C140 160 180 140 190 100 C180 60 140 40 100 10Z'/%3E%3Cpath d='M100 30 C70 55 40 70 30 100 C40 130 70 145 100 170 C130 145 160 130 170 100 C160 70 130 55 100 30Z'/%3E%3Ccircle cx='100' cy='100' r='12'/%3E%3Ccircle cx='100' cy='100' r='5'/%3E%3Cpath d='M100 10 L100 30 M190 100 L170 100 M100 190 L100 170 M10 100 L30 100'/%3E%3Cellipse cx='100' cy='100' rx='70' ry='40'/%3E%3Cellipse cx='100' cy='100' rx='40' ry='70'/%3E%3C/g%3E%3C/svg%3E"),
-    radial-gradient(ellipse at top, #2e1a08 0%, #1a0d03 100%);
-  background-size: 200px 200px, cover;
+  background-image: url("gold.png");
+  background-size: 600px 600px;
+  background-repeat: repeat;
   min-height: 100vh;
   font-family: 'IM Fell English', Georgia, serif;
   color: var(--ink);
@@ -38,7 +36,7 @@ body {
 .site-header {
   text-align: center;
   padding: 48px 20px 32px;
-  background: linear-gradient(180deg, #1a0d03 0%, #3b200a 100%);
+  background: linear-gradient(180deg, rgba(26,13,3,0.92) 0%, rgba(59,32,10,0.92) 100%);
   border-bottom: 3px solid var(--gold-mid);
 }
 
@@ -77,7 +75,7 @@ body {
 }
 
 .site-nav {
-  background: #1a0c02;
+  background: rgba(26, 12, 2, 0.95);
   border-bottom: 1px solid var(--gold-warm);
   border-top: 1px solid var(--gold-warm);
   text-align: center;
@@ -120,8 +118,6 @@ body {
 
 .torn-paper {
   background: var(--parchment);
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E");
   border-radius: 2px;
   padding: 36px 40px 32px;
   clip-path: polygon(
@@ -357,7 +353,7 @@ body {
 .site-footer {
   text-align: center;
   padding: 32px 20px 40px;
-  background: #1e0f02;
+  background: rgba(30, 15, 2, 0.95);
   border-top: 2px solid var(--gold-mid);
   color: var(--parchment-dark);
   font-size: 0.88rem;

@@ -98,8 +98,13 @@ body > * {
   padding: 7px 20px;
   display: flex;
   justify-content: center;
+}
+
+.nav-inner {
+  display: inline-flex;
   align-items: center;
-  gap: 0;
+  border: 1px solid var(--gold-warm);
+  padding: 5px 28px;
 }
 
 .site-nav a {

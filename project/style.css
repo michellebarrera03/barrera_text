@@ -2,14 +2,12 @@
    ONCE UPON A PAGE — Beauty & the Beast Blog
    ============================================= */
 
-/* ---------- IMPORTS & RESET ---------- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ---------- ROOT TOKENS ---------- */
 :root {
   --gold-light:    #f9e9a0;
   --gold-mid:      #e8c84a;
@@ -26,17 +24,17 @@
   --shadow:        rgba(60, 30, 5, 0.18);
 }
 
-/* ---------- BODY ---------- */
 body {
-  background-color: #2a1a08;
+  background-color: #1a0d03;
   background-image:
-    radial-gradient(ellipse at top, #3d2510 0%, #1a0d03 100%);
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cg fill='none' stroke='%23c9a020' stroke-width='0.7' opacity='0.13'%3E%3Cpath d='M100 10 C60 40 20 60 10 100 C20 140 60 160 100 190 C140 160 180 140 190 100 C180 60 140 40 100 10Z'/%3E%3Cpath d='M100 30 C70 55 40 70 30 100 C40 130 70 145 100 170 C130 145 160 130 170 100 C160 70 130 55 100 30Z'/%3E%3Ccircle cx='100' cy='100' r='12'/%3E%3Ccircle cx='100' cy='100' r='5'/%3E%3Cpath d='M100 10 L100 30 M190 100 L170 100 M100 190 L100 170 M10 100 L30 100'/%3E%3Cellipse cx='100' cy='100' rx='70' ry='40'/%3E%3Cellipse cx='100' cy='100' rx='40' ry='70'/%3E%3C/g%3E%3C/svg%3E"),
+    radial-gradient(ellipse at top, #2e1a08 0%, #1a0d03 100%);
+  background-size: 200px 200px, cover;
   min-height: 100vh;
   font-family: 'IM Fell English', Georgia, serif;
   color: var(--ink);
 }
 
-/* ---------- HEADER ---------- */
 .site-header {
   text-align: center;
   padding: 48px 20px 32px;
@@ -78,18 +76,18 @@ body {
   margin: 6px 0;
 }
 
-/* ---------- NAV ---------- */
 .site-nav {
-  background: #1e0f02;
-  border-bottom: 2px solid var(--gold-warm);
+  background: #1a0c02;
+  border-bottom: 1px solid var(--gold-warm);
+  border-top: 1px solid var(--gold-warm);
   text-align: center;
-  padding: 14px 20px;
+  padding: 8px 20px;
 }
 
 .site-nav a {
   font-family: 'Cinzel', serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
   color: var(--gold-light);
   text-decoration: none;
   text-transform: uppercase;
@@ -102,12 +100,11 @@ body {
 
 .nav-sep {
   color: var(--gold-warm);
-  margin: 0 16px;
-  opacity: 0.6;
-  font-size: 0.7rem;
+  margin: 0 12px;
+  opacity: 0.5;
+  font-size: 0.6rem;
 }
 
-/* ---------- MAIN FEED ---------- */
 .blog-feed {
   max-width: 760px;
   margin: 48px auto;
@@ -117,20 +114,16 @@ body {
   gap: 52px;
 }
 
-/* ---------- BLOG CARD ---------- */
 .blog-card {
   position: relative;
 }
 
-/* TORN PAPER CONTAINER */
 .torn-paper {
   background: var(--parchment);
   background-image:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E");
   border-radius: 2px;
   padding: 36px 40px 32px;
-
-  /* Torn top edge using clip-path */
   clip-path: polygon(
     0% 2.5%, 2% 0%, 4% 2%, 6% 0.5%, 8% 2.5%, 10% 0%,
     12% 2%, 14% 0.5%, 16% 2.5%, 18% 0%, 20% 1.5%,
@@ -156,14 +149,12 @@ body {
     12% 97.5%, 10% 100%, 8% 98%, 6% 100%,
     4% 97.5%, 2% 100%, 0% 97.5%
   );
-
   box-shadow:
     0 8px 32px var(--shadow),
     0 2px 8px rgba(0,0,0,0.25),
     inset 0 0 60px rgba(212, 160, 23, 0.07);
 }
 
-/* ---------- CARD HEADER ---------- */
 .card-header {
   border-bottom: 1px solid var(--parchment-dark);
   padding-bottom: 16px;
@@ -193,7 +184,6 @@ body {
   font-style: italic;
 }
 
-/* ---------- POST BODY ---------- */
 .post-body p {
   font-size: 1.05rem;
   line-height: 1.85;
@@ -201,7 +191,6 @@ body {
   margin-bottom: 14px;
 }
 
-/* ---------- POST FOOTER ---------- */
 .post-footer {
   display: flex;
   align-items: center;
@@ -228,7 +217,6 @@ body {
   letter-spacing: 0.18em;
 }
 
-/* ---------- VOTE SECTION ---------- */
 .vote-section {
   display: flex;
   gap: 10px;
@@ -267,7 +255,6 @@ body {
   font-weight: 600;
 }
 
-/* ---------- COMMENT SECTION ---------- */
 .comment-section {
   margin-top: 28px;
   padding-top: 22px;
@@ -315,7 +302,6 @@ body {
   font-style: italic;
 }
 
-/* ---------- COMMENT FORM ---------- */
 .comment-form {
   display: flex;
   flex-direction: column;
@@ -368,7 +354,6 @@ body {
   color: var(--brown-dark);
 }
 
-/* ---------- FOOTER ---------- */
 .site-footer {
   text-align: center;
   padding: 32px 20px 40px;
@@ -384,7 +369,6 @@ body {
   margin: 8px auto;
 }
 
-/* ---------- RESPONSIVE ---------- */
 @media (max-width: 540px) {
   .torn-paper {
     padding: 32px 22px 28px;

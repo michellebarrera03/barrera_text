@@ -25,18 +25,34 @@
 }
 
 body {
-  background-image: url("gold.png");
-  background-size: 600px 600px;
-  background-repeat: repeat;
+  background-color: #1a0d03;
   min-height: 100vh;
   font-family: 'IM Fell English', Georgia, serif;
   color: var(--ink);
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("gold.png");
+  background-size: 500px 500px;
+  background-repeat: repeat;
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
 }
 
 .site-header {
   text-align: center;
   padding: 48px 20px 32px;
-  background: linear-gradient(180deg, rgba(26,13,3,0.92) 0%, rgba(59,32,10,0.92) 100%);
+  background: linear-gradient(180deg, rgba(26,13,3,0.95) 0%, rgba(59,32,10,0.95) 100%);
   border-bottom: 3px solid var(--gold-mid);
 }
 
@@ -75,21 +91,26 @@ body {
 }
 
 .site-nav {
-  background: rgba(26, 12, 2, 0.95);
+  background: rgba(26, 12, 2, 0.97);
   border-bottom: 1px solid var(--gold-warm);
   border-top: 1px solid var(--gold-warm);
   text-align: center;
-  padding: 8px 20px;
+  padding: 7px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 
 .site-nav a {
   font-family: 'Cinzel', serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
   color: var(--gold-light);
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.2s;
+  padding: 0 4px;
 }
 
 .site-nav a:hover {
@@ -98,9 +119,9 @@ body {
 
 .nav-sep {
   color: var(--gold-warm);
-  margin: 0 12px;
+  margin: 0 10px;
   opacity: 0.5;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
 }
 
 .blog-feed {
@@ -353,7 +374,7 @@ body {
 .site-footer {
   text-align: center;
   padding: 32px 20px 40px;
-  background: rgba(30, 15, 2, 0.95);
+  background: rgba(30, 15, 2, 0.97);
   border-top: 2px solid var(--gold-mid);
   color: var(--parchment-dark);
   font-size: 0.88rem;

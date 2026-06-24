@@ -1,8 +1,4 @@
-# Once Upon a Page 🌹
 
-A Beauty and the Beast inspired blog with a warm, old-timey parchment aesthetic.
-
-## Features
 - Torn parchment paper styled blog cards
 - Upvote / Downvote on each post
 - Comment section per post

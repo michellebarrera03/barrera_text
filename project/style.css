@@ -91,22 +91,18 @@ body > * {
 }
 
 .site-nav {
-  background: rgba(26, 12, 2, 0.97);
-  border-bottom: 1px solid var(--gold-warm);
-  border-top: 1px solid var(--gold-warm);
   text-align: center;
-  padding: 7px 20px;
-  display: flex;
-  justify-content: center;
+  padding: 12px 20px;
+  background: transparent;
 }
 
 .nav-inner {
   display: inline-flex;
   align-items: center;
+  background: rgba(26, 12, 2, 0.97);
   border: 1px solid var(--gold-warm);
-  padding: 5px 28px;
+  padding: 6px 28px;
 }
-
 .site-nav a {
   font-family: 'Cinzel', serif;
   font-size: 0.72rem;

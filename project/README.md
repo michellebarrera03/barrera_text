@@ -14,7 +14,3 @@ my-blog/
 └── README.md     ← this file
 ```
 
-## How to Use
-1. Upload all files to your GitHub repository
-2. Go to **Settings → Pages** and enable GitHub Pages
-3. Your blog will be live at `https://yourusername.github.io/your-repo-name`
